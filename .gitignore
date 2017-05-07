@@ -1,0 +1,24 @@
+1) Load :
+         Load data from the file system
+         Example : A = LOAD 'data' AS (a1:int,a2:int,a3:int);
+2) Store :
+          Store data in the file system
+          Example : STORE A INTO 'myoutput' USING PigStorage ('*');
+3) Dump :
+         Dumps or displays results to screen.
+         Example : DUMP X;
+4) Generate :
+             Generates data transformations based on columns of data
+             Example : X = FOREACH A GENERATE f1
+5) Filter :
+           Select a set of tuples from a relation based on a condition.
+           Example : X = FILTER A BY f3 == 3;
+6) Group By :
+             Group the data in one or more relations
+             Example : B = GROUP A BY age;
+7) Order By :
+             sort a relation based on one or more fields
+             Example : X = ORDER A BY a3 DESC;
+8) Describe :
+             describe the bag or data in the file system.
+             Example : describe A;
